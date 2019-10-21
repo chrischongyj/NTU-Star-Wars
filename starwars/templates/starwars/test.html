@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Have</title>
+<h1>I have a course to swap</h1>
+<body style="background-image:url('https://i.gyazo.com/c9903dd561be0cff3d52585931ba2792.jpg')">
+<br>
+<form action="/addcourse/" method="post">
+    {% csrf_token %}
+
+    <label for="course_name"><h2>Course Name: </h2></label>
+    <input id="course_name" type="text" name="course_name" value="{{ course_name }}">
+    <br>
+
+
+    <label for="course_code"><h2>Course Code: </h2></label>
+    <input id="course_code" type="text" name="course_code" value="{{ course_code }}">
+    <br>
+
+    <label for="course_au"><h2>Course AU:</h2></label>
+    <input id="course_au" type="text" name="course_au" value="{{ course_au }}">
+    <br>
+    <input type="submit" value="OK">
+
+</form>

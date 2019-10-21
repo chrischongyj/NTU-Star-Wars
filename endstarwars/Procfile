@@ -1,0 +1,1 @@
+web: gunicorn endstarwars.wsgi --log-file -
